@@ -11,42 +11,64 @@ body {
 
 .logo {
     color: white;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 1px black;
     font-size: 36px;
     padding: 0px 16px;
     display: inline-block;
 
 }
 
-.links {
-    color:white;
-	display: inline-block;
-	list-style: none;
-	font-size: 24px;
-    margin-right: 60px;
-	padding: 0px 5px
+.nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
 }
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px;
-}
-nav ul li a {
-    color: white;
+.nav a {
+	width: 500px;
+	display: block;
+	padding: 20px 30px;
+	font-size: 26px;
+	text-decoration: none;
+	color: white;
 }
 
-.nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    opacity: .9;
-    overflow-x: hidden;
-    padding-top: 60px;
+.nav .close {
+	position: absolute;
+	top: 0;
+	margin-right: 50px;
+	font-size: 30px
 }
+.nav .close:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.slide a {
+    position: absolute;
+    top: 20px;
+	right: 50px;
+	color: #000;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.slide a:hover {
+    color: #aaa;
+    transition: 0.4s;
+}
+#content {
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+}
+
 
 #aboutButton {
     position: absolute;
@@ -60,7 +82,7 @@ nav ul li a {
     
 }
 
-.book {
+#book {
     position: fixed;
     top: 50%;
     left:  50%;

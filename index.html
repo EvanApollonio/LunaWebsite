@@ -8,20 +8,23 @@
 </head>
 <body>
     <header>
-        <h1c class="logo">Luna Apollonio</h1>
-            
+        <h1 class="logo">Luna Apollonio</h1>
             <div id="content">
                 <span class="slide">
-                    <a href="#" onclick="openSlide()" id="aboutButton">About</a>
+                  <a href="#" onclick="openSlideMenu()">
+                    About
+                  </a>
                 </span>
                 <div id="menu" class="nav">
-                    <a href="#" onclick="closeSlide">close</a>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus itaque dolor, a laboriosam, adipisci ipsum nihil doloremque iusto eum, iure consequuntur error id odit inventore! Veritatis eaque perferendis ut sint.</p>
+                  <a href="#" class="close" onclick="closeSlideMenu()">
+                    Close
+                  </a>
+                  <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam quod nulla atque assumenda pariatur, autem facilis mollitia eligendi iste quam tempore tenetur commodi quo molestias, dolore aspernatur. Similique, placeat.</a>
                 </div>
-            </div> 
+              </div>
     </header>
     <img src="include/btn_prev.png" id="prev" class="flip-control">
-    <div class="book">
+    <div id="book">
         <div id="flipbook">
             <div class="page">
                 <h1>Slider Luna</h1>
@@ -78,15 +81,16 @@
         $("#prev").click(function(e){
             e.preventDefault();
             oTurn.turn("previous");
-            $("#flipbook").turn("center");
+            
         });
 
         $("#next").click(function(e){
+            
             e.preventDefault();
             oTurn.turn("next");
-            $("#flipbook").turn("center");
+            
         })
-        $("#flipbook").turn("center");
+
     </script>
 
     <footer>
