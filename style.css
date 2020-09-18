@@ -1,0 +1,95 @@
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    background-color: rgb(231, 231, 231);
+    
+}
+
+
+
+.logo {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 36px;
+    padding: 0px 16px;
+    display: inline-block;
+
+}
+
+.links {
+    color:white;
+	display: inline-block;
+	list-style: none;
+	font-size: 24px;
+    margin-right: 60px;
+	padding: 0px 5px
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+#aboutButton {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    height: 50px;
+    font-size: 24;
+    text-decoration: none;
+    color: black;
+    text-shadow: none ;
+    
+}
+
+.book {
+    position: fixed;
+    top: 50%;
+    left:  50%;
+    margin-left: -750px;
+    margin-top: -353px;
+    
+}
+#flipbook{
+
+    width:1000px;
+    height:707px;
+    padding: 20px 0px;
+}
+
+.flip-control {
+    top: 45%;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+}
+
+#next {
+    right: 0;
+}
+
+#mybook .turn-page{
+	background-color:#ccc;
+}
+
+.page {
+    background-color: white;
+}

@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Luna Website</title>
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1c class="logo">Luna Apollonio</h1>
+            
+            <div id="content">
+                <span class="slide">
+                    <a href="#" onclick="openSlide()" id="aboutButton">About</a>
+                </span>
+                <div id="menu" class="nav">
+                    <a href="#" onclick="closeSlide">close</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus itaque dolor, a laboriosam, adipisci ipsum nihil doloremque iusto eum, iure consequuntur error id odit inventore! Veritatis eaque perferendis ut sint.</p>
+                </div>
+            </div> 
+    </header>
+    <img src="include/btn_prev.png" id="prev" class="flip-control">
+    <div class="book">
+        <div id="flipbook">
+            <div class="page">
+                <h1>Slider Luna</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ad, necessitatibus voluptas accusamus commodi ipsum eos saepe debitis, repellendus impedit qui facere rem placeat facilis! Neque itaque fugit eius nemo!</p>
+            </div>
+            <div class="page">
+            
+                <h1>Neki</h1>
+                
+                
+            </div>
+            <div class="page">
+                
+                <h1>evan</h1>
+                
+            </div>
+            <div class="page">
+
+                <h1>Gallery</h1>
+                
+            </div>
+            <div class="page">
+                
+                <h1>evan</h1>
+                
+            </div>
+            <div class="page">
+                
+                <h1>evan</h1>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <img src="include/btn_next.png" id="next" class="flip-control">
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="js/turn.js"></script>
+
+    
+  
+    <script>
+        var oTurn = $("#flipbook").turn({
+        width: 1000,
+        height: 707,
+        autoCenter: true,
+        next:true
+        });
+        
+        $("#prev").click(function(e){
+            e.preventDefault();
+            oTurn.turn("previous");
+            $("#flipbook").turn("center");
+        });
+
+        $("#next").click(function(e){
+            e.preventDefault();
+            oTurn.turn("next");
+            $("#flipbook").turn("center");
+        })
+        $("#flipbook").turn("center");
+    </script>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
