@@ -8,10 +8,31 @@ body {
 }
 
 .logo {
-    width: 300px;
-    height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
     display: inline-block;
 
+}
+.logoGif {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+.logoLuna {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+#about {
+    width: 160px;
+    height: 40px;
+}
+
+#about:hover {
+    opacity: 0.2;
+    transition: 0.4s;
 }
 
 .nav {
@@ -27,23 +48,29 @@ body {
 	transition: 0.7s;
 }
 .nav a {
-	width: 500px;
+	width: 450px;
 	display: block;
-	padding: 20px 30px;
-	font-size: 26px;
+	padding: 15px 15px;
+	font-size: 22px;
 	text-decoration: none;
 	color: black;
 }
 
 .nav .close {
-	position: absolute;
+    position: absolute;
+    width: 25px;
+    height: 25px;
 	top: 0;
-	margin-right: 50px;
-	font-size: 30px
+
+}
+.nav .close img {
+    width: 25px;
+    height: 25px;
+    transition: 0.4s;
 }
 .nav .close:hover {
-	color: #fff;
-	transition: 0.4s;
+	opacity: 0.2;
+    transition: 0.4s;
 }
 .slide a {
     position: absolute;
@@ -66,28 +93,17 @@ body {
 }
 
 
-#aboutButton {
-    position: absolute;
-    top: 20px;
-    right: 70px;
-    height: 50px;
-    font-size: 24;
-    text-decoration: none;
-    color: black;
-    text-shadow: none ;
-    
-}
 
 #book {
     position: fixed;
     top: 50%;
     left:  50%;
     margin-left: -750px;
+    transition: margin-left 0.3s;
     margin-top: -353px;
     
 }
 #flipbook{
-
     width:1000px;
     height:707px;
     padding: 20px 0px;
@@ -95,13 +111,22 @@ body {
 
 .flip-control {
     top: 45%;
-    width: 50px;
-    height: 100px;
+    width: 35px;
+    height: 70px;
+    
     position: absolute;
 }
 
+.flip-control:hover {
+    opacity: 0.2;
+    transition: 0.4s;
+}
+
+#prev {
+    left: 10%;
+}
 #next {
-    right: 0;
+    right: 10%;
 }
 
 #mybook .turn-page{
@@ -109,5 +134,50 @@ body {
 }
 
 .page {
+    width: auto;
+    text-align: center;
     background-color: white;
+}
+.page img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#surprise {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    text-decoration: none;
+    color: black;
+    font: 20px;
+    transition: 0.7s
+}
+
+footer {
+    height: 0;
+	width: 100%;
+	position: fixed;
+    z-index: 1;
+    left: 0;
+	bottom: 0;
+	background-color: rgb(241, 226, 222);
+	overflow-y: hidden;
+	transition: 0.7s;  
+
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    bottom: 50px;
+}
+
+.linksIcons {
+    height: 20px;
+    width: 20px;
+    position: relative;
+
 }

@@ -8,17 +8,21 @@
 </head>
 <body>
     <header>
-        <img src="include/logoGif.gif" class="logo">
+        <div class="logo">
+            <img src="include/logoGif.gif" class="logoGif">
+            <img src="include/lunaapollonio.png" alt="Luna Apollonio" class="logoLuna">
+        </div>
             <div id="content">
                 <span class="slide">
                   <a href="#" onclick="openSlideMenu()">
-                    About
+                    <img src="include/about.png" alt="About" id="about">
                   </a>
                 </span>
                 <div id="menu" class="nav">
                   <a href="#" class="close" onclick="closeSlideMenu()">
-                    Close
+                    <img src="include/x.png" alt="close">
                   </a>
+                  
                   <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam quod nulla atque assumenda pariatur, autem facilis mollitia eligendi iste quam tempore tenetur commodi quo molestias, dolore aspernatur. Similique, placeat.</a>
                 </div>
               </div>
@@ -27,12 +31,11 @@
     <div id="book">
         <div id="flipbook">
             <div class="page">
-                <h1>Slider Luna</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ad, necessitatibus voluptas accusamus commodi ipsum eos saepe debitis, repellendus impedit qui facere rem placeat facilis! Neque itaque fugit eius nemo!</p>
+                <img src="include/platnica.png" alt="image1">
             </div>
             <div class="page">
             
-                <h1>Neki</h1>
+                <img src="include/1.png" alt="image1" style="width: 100%; height: 100%;">
                 
                 
             </div>
@@ -62,9 +65,7 @@
     </div>
     <img src="include/btn_next.png" id="next" class="flip-control">
     
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
 
     <script src="js/turn.js"></script>
 
@@ -75,26 +76,45 @@
         width: 1000,
         height: 707,
         autoCenter: true,
-        next:true
+        next: true
         });
         
         $("#prev").click(function(e){
+            if (+$("#flipbook").turn("page") == 6) {
+                document.getElementById("book").style.marginLeft = "-500";
+            }
             e.preventDefault();
             oTurn.turn("previous");
-            
+            if (+$("#flipbook").turn("page") == 1) {
+                document.getElementById("book").style.marginLeft = "-750";
+            }
         });
 
         $("#next").click(function(e){
-            
+            if (+$("#flipbook").turn("page") == 1) {
+                document.getElementById("book").style.marginLeft = "-500";
+            }
             e.preventDefault();
             oTurn.turn("next");
+            if (+$("#flipbook").turn("page") == 6) {
+                document.getElementById("book").style.marginLeft = "-250";
+            }
             
         })
 
     </script>
 
-    <footer>
-
+    <a href="#" id="surprise" onclick="surprise()">Surprise</a>
+    <footer id="foot">
+        <div id="footerContent">
+            <h1>contact</h1>
+            <div class="links">
+                <a href="https://www.instagram.com/lunapollonio" target="_blank">
+                    <img src="include/instagram.png" alt="" class="linksIcons">
+                </a>
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>
