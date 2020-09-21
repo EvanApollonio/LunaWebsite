@@ -11,12 +11,13 @@
         <div class="logo">
             <img src="include/gifpomoc.gif" class="logoGif">
             <img src="include/lunaapollonio.png" alt="Luna Apollonio" class="logoLuna">
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()">
+                  <img src="include/about.png" alt="About" id="about">
+                </a>
         </div>
             <div id="content">
-                <span class="slide">
-                  <a href="#" onclick="openSlideMenu()">
-                    <img src="include/about.png" alt="About" id="about">
-                  </a>
+                
                 </span>
                 <div id="menu" class="nav">
                   <a href="#" class="close" onclick="closeSlideMenu()">
@@ -76,7 +77,7 @@
         width: 1000,
         height: 707,
         autoCenter: true,
-        next: true
+        next: true,
         });
         
         $("#prev").click(function(e){
@@ -123,5 +124,8 @@
         </div>
         
     </footer>
+    <div id="mars">
+        <img src="include/mars.png" alt="" id="marsIm">
+    </div>
 </body>
 </html>

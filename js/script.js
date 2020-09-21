@@ -1,6 +1,6 @@
 function openSlideMenu() {
-    document.getElementById('menu').style.width = '500px';
-    document.getElementById('content').style.marginRight = '500px';
+    document.getElementById('menu').style.width = '25%';
+    document.getElementById('content').style.marginRight = '25%';
 
 }
 function closeSlideMenu() {
@@ -13,6 +13,7 @@ function surprise() {
     document.getElementById('foot').style.height = '100px';
     document.getElementById('footerContent').style.marginBottom = '100px';
     document.getElementById('surprise').style.height = '150px';
+    document.getElementById('marsIm').style.visibility = 'visible';
 
     
 }
