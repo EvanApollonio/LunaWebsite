@@ -10,10 +10,12 @@ function closeSlideMenu() {
 }
 
 function surprise() {
-    document.getElementById('foot').style.height = '100px';
-    document.getElementById('footerContent').style.marginBottom = '100px';
-    document.getElementById('surprise').style.height = '150px';
-    document.getElementById('marsIm').style.visibility = 'visible';
+    document.getElementById('foot').style.height = '10%';
+    document.getElementById('footerContent').style.marginBottom = '10%';
+    document.getElementById('surprise').style.height = '15%';
+
+    document.getElementById('marsIm').style.bottom = '9%';
+
 
     
 }

@@ -53,20 +53,21 @@ body {
 	padding-top: 60px;
 	transition: 0.7s;
 }
-.nav a {
-	width: 450px;
+.nav p {
+	width: 23vw;
 	display: block;
-	padding: 15px 15px;
-	font-size: 20%;
-	text-decoration: none;
+	padding: 0vw 1vw;
+	font-size: 1vw;
+	text-decoration: none; 
 	color: black;
 }
 
 .nav .close {
     position: absolute;
-    width: 25px;
-    height: 25px;
-	top: 0;
+    width: 10%;
+    height: auto;
+    top: 1%;
+    right: 2%;
 
 }
 .nav .close img {
@@ -111,7 +112,7 @@ body {
 
 .flip-control {
     top: 45%;
-    width: 3%;
+    width: 2%;
     height: auto;
     position: absolute;
 }
@@ -199,11 +200,12 @@ footer {
 }
 
 #marsIm {
-    position: absolute;
-    z-index: -1;
-    width: 800px;
+    width: 60%;
     height: auto;
+	position: fixed;
+    z-index: 1;
     left: 0;
-    bottom: 100px;
-    visibility: hidden;
+	bottom: -120%;
+	overflow-y: hidden;
+	transition: 0.7s;  
 }
