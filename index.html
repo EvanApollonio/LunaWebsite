@@ -3,30 +3,31 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Luna Website</title>
+    <link rel="shortcut icon" href="include/favicon.ico">
     <script src="js/script.js"></script>
     
 </head>
 <body>
+    <div id="surpriseBackground"></div>
     <header>
         <div class="logo">
             <img src="include/gifpomoc.gif" class="logoGif">
             <img src="include/lunaapollonio.png" alt="Luna Apollonio" class="logoLuna">
             <span class="slide">
                 <a href="#" onclick="openSlideMenu()">
-                  <img src="include/about.png" alt="About" id="about">
+                <img src="include/about.png" alt="About" id="about">
                 </a>
         </div>
             <div id="content">
-                
                 </span>
                 <div id="menu" class="nav">
-                  <a href="#" class="close" onclick="closeSlideMenu()">
+                <a href="#" class="close" onclick="closeSlideMenu()">
                     <img src="include/x.png" alt="close">
-                  </a>
-                  
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam quod nulla atque assumenda pariatur, autem facilis mollitia eligendi iste quam tempore tenetur commodi quo molestias, dolore aspernatur. Similique, placeat.</p>
+                </a>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam quod nulla atque assumenda pariatur, autem facilis mollitia eligendi iste quam tempore tenetur commodi quo molestias, dolore aspernatur. Similique, placeat.</p>
                 </div>
-              </div>
+            </div>
     </header>
     <img src="include/btn_prev.png" id="prev" class="flip-control">
     <div id="book">
@@ -35,15 +36,10 @@
                 <img src="include/platnica.png" alt="image1">
             </div>
             <div class="page">
-            
-                <img src="include/1.png" alt="image1" style="width: 100%; height: 100%;">
-                
-                
+                <img src="include/2.png" alt="image1">
             </div>
             <div class="page">
-                
-                <h1>evan</h1>
-                
+                <img src="include/3.png" alt="image2">
             </div>
             <div class="page">
 
@@ -65,17 +61,13 @@
         
     </div>
     <img src="include/btn_next.png" id="next" class="flip-control">
-    
     <script src="js/jquery-3.5.1.js"></script>
-
     <script src="js/turn.js"></script>
-
     
-  
     <script>
         var oTurn = $("#flipbook").turn({
-        width: 1000,
-        height: 707,
+        width: 1040,
+        height: 700,
         autoCenter: true,
         next: true,
         });
@@ -99,31 +91,32 @@
             oTurn.turn("next");
             if (+$("#flipbook").turn("page") == 6) {
                 document.getElementById("book").style.marginLeft = "-250";
-            }
-            
+            }   
         })
-
     </script>
+    <a href="#"  onclick="surprise()">
+        <h1 id="surprise">CONTACT</h1>
+    </a>
+<footer id="foot">
+    <div id="footerContent">
+        <h1>contact</h1>
+        <div class="links">
+            <a href="https://www.instagram.com/lunapollonio" target="_blank">
+                <img src="include/instagram.png" alt="" class="linksIcons" id="ig">
+            </a>
+            <a href="mailto:luna.apollonio@gmail.com">
+                <img src="include/email.png" alt="" class="linksIcons" id="mail">
+            </a>
+            <a href="#">
+                <img src="include/hearticon.png" alt="" class="linksIcons" id="heart">
+            </a>
 
-    <a href="#" id="surprise" onclick="surprise()">Surprise</a>
-    <footer id="foot">
-        <div id="footerContent">
-            <h1>contact</h1>
-            <div class="links">
-                <a href="https://www.instagram.com/lunapollonio" target="_blank">
-                    <img src="include/instagram.png" alt="" class="linksIcons" id="ig">
-                </a>
-                <a href="mailto:luna.apollonio@gmail.com">
-                    <img src="include/email.png" alt="" class="linksIcons" id="mail">
-                </a>
-                <a href="#">
-                    <img src="include/hearticon.png" alt="" class="linksIcons" id="heart">
-                </a>
-
-            </div>
         </div>
-        
+    </div>   
     </footer>
+    <a href="#" id="closeSurprise" onclick="closeSurprise()">
+        <img src="include/x.png" alt="close">
+    </a>
     <div id="mars">
         <img src="include/mars.png" alt="" id="marsIm">
     </div>

@@ -4,9 +4,9 @@ body {
     margin: 0;
     overflow-x: hidden;
     position: relative;
-    background-color: rgb(231, 231, 231);
-    
+    background-color: rgb(231, 231, 231);   
 }
+
 
 .logo {
     width: 100%;
@@ -28,17 +28,18 @@ body {
 }
 
 #about {
-    width: 6%;
+    width: 5.5%;
     height: auto;
     position: absolute;
     top: 40%;
     right: 2%;
-	color: #000;
+    
 }
 
 #about:hover {
     opacity: 0.2;
     transition: 0.4s;
+    cursor: url("include/roka.gif");
 }
 
 .nav {
@@ -48,9 +49,9 @@ body {
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background-color: rgb(241, 226, 222);
+	background-color: #285d28;
 	overflow-x: hidden;
-	padding-top: 60px;
+	padding-top: 3%;
 	transition: 0.7s;
 }
 .nav p {
@@ -71,8 +72,8 @@ body {
 
 }
 .nav .close img {
-    width: 25px;
-    height: 25px;
+    width: 80%;
+    height: auto;
     transition: 0.4s;
 }
 .nav .close:hover {
@@ -87,13 +88,10 @@ body {
 }
 
 #content {
-	padding: 20px;
-	transition: margin-left 0.7s;
+	transition: margin-left 0.3s;
 	overflow: hidden;
 	width: 100%;
 }
-
-
 
 #book {
     position: fixed;
@@ -104,9 +102,10 @@ body {
     margin-top: -353px;
     
 }
+
 #flipbook{
-    width:1000px;
-    height:707px;
+    width: 1040px;
+    height: 700px;
     padding: 20px 0px;
 }
 
@@ -115,6 +114,7 @@ body {
     width: 2%;
     height: auto;
     position: absolute;
+    z-index: 2;
 }
 
 .flip-control:hover {
@@ -143,15 +143,13 @@ body {
     height: auto;
 }
 
-
-
 #surprise {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 5%;
+    left: 5%;
     text-decoration: none;
     color: black;
-    font: 20px;
+    font: 1vw;
     transition: 0.7s
 }
 
@@ -159,25 +157,29 @@ footer {
     height: 0;
 	width: 100%;
 	position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
 	bottom: 0;
-	background-color: rgb(241, 226, 222);
+	background-color:#285D28;
 	overflow-y: hidden;
 	transition: 0.7s;  
+}
 
+#footerContent {
+    width: 100%;
+    height: 100%;
 }
 
 .links {
     position: relative;
     display: inline-block;
-    left: 50%;
-    bottom: 50px;
+    left: 49%;
+    bottom: 40%;
     border-bottom: none;
 }
 
 .linksIcons {
-    height: 25px;
+    height: 25%;
     width: auto;
     position: relative;
     text-decoration: none;
@@ -200,12 +202,24 @@ footer {
 }
 
 #marsIm {
-    width: 60%;
+    width: 50%;
     height: auto;
 	position: fixed;
     z-index: 1;
-    left: 0;
+    left: 10%;
 	bottom: -120%;
-	overflow-y: hidden;
 	transition: 0.7s;  
 }
+
+#closeSurprise {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    visibility: hidden;
+}
+
+#closeSurprise img {
+    width: 20%;
+
+}
+
