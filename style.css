@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
+    overflow: hidden;
     position: relative;
     background-color: rgb(231, 231, 231);   
 }
@@ -93,6 +94,7 @@ body {
 
 #book {
     position: fixed;
+    z-index: 2;
     top: 50%;
     left:  50%;
     margin-left: -750px;
@@ -141,6 +143,16 @@ body {
     height: auto;
 }
 
+#sencaPlatnica {
+    position: absolute;
+    height: 770px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    margin-left: -255px;
+    margin-top: -388px;
+}
+
 #surprise {
     position: absolute;
     bottom: 5%;
@@ -166,6 +178,26 @@ body {
 #footerContent {
     width: 100%;
     height: 100%;
+}
+section .scroll {
+    width: 100%;
+    display: flex;
+}
+section .scroll div {
+    font-size: 2em;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .links {

@@ -36,30 +36,29 @@
                 <img src="include/pages/platnica.png" alt="image1">
             </div>
             <div class="page">
-                <img src="include/pages/2.png" alt="image1">
+                <img src="include/pages/2.png" alt="image2">
             </div>
             <div class="page">
-                <img src="include/pages/3.png" alt="image2">
+                <img src="include/pages/3.png" alt="image3">
             </div>
             <div class="page">
-
-                <h1>Gallery</h1>
-                
+                <img src="include/pages/4.png" alt="image4">
             </div>
             <div class="page">
-                
-                <h1>evan</h1>
-                
+                <img src="include/pages/5.png" alt="image5">
             </div>
             <div class="page">
-                
-                <h1>evan</h1>
-                
+                <img src="include/pages/6.png" alt="image6">
             </div>
-            
+            <div class="page">
+                <img src="include/pages/7.png" alt="image7">
+            </div>
+           
         </div>
         
     </div>
+    <img src="include/sencaplatnica.png" alt="" id="sencaPlatnica">
+
     <img src="include/btn_next.png" id="next" class="flip-control">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/turn.js"></script>
@@ -73,7 +72,7 @@
         });
         
         $("#prev").click(function(e){
-            if (+$("#flipbook").turn("page") == 6) {
+            if (+$("#flipbook").turn("page") == 10) {
                 document.getElementById("book").style.marginLeft = "-500";
             }
             e.preventDefault();
@@ -89,17 +88,24 @@
             }
             e.preventDefault();
             oTurn.turn("next");
-            if (+$("#flipbook").turn("page") == 6) {
+            if (+$("#flipbook").turn("page") == 10) {
                 document.getElementById("book").style.marginLeft = "-250";
             }   
         })
     </script>
+
     <a href="#"  onclick="surprise()">
         <h1 id="surprise">CONTACT</h1>
     </a>
 <footer id="foot">
     <div id="footerContent">
-        <h1>contact</h1>
+        <section>
+            <div class="scroll">
+                <div>
+                    Check <span>Luna - </span>Check <span>Evan - </span>check <span>us out - </span></span>Online <span>SOMETHING - </span>we got this</span>Soemhwo <span>Tyes yes luna happy</span>
+                </div>
+            </div>
+        </section>
         <div class="links">
             <a href="https://www.instagram.com/lunapollonio" target="_blank">
                 <img src="include/instagram.png" alt="" class="linksIcons" id="ig">
