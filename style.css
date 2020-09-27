@@ -41,6 +41,14 @@ body {
     
 }
 
+#aboutContent {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 20%;
+    left: 10%;
+}
+
 .nav {
 	height: 100%;
 	width: 25%;
@@ -64,10 +72,10 @@ body {
 
 .nav .close {
     position: absolute;
-    width: 10%;
+    width: 6%;
     height: auto;
-    top: 1%;
-    right: 2%;
+    top: 2%;
+    right: 4%;
 
 }
 .nav .close img {
@@ -151,6 +159,16 @@ body {
     left: 50%;
     margin-left: -255px;
     margin-top: -388px;
+}
+#senca {
+    position: absolute;
+    height: auto;
+    width: 1044px;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 333px;
+    visibility: hidden;
 }
 
 #surprise {
@@ -285,7 +303,7 @@ section .scroll div {
     height: 100%;
     z-index: -1;
     background-color: #e2e1ce;
-    opacity: 0.7;
+    opacity: 0.8;
     visibility: hidden;
 
 }

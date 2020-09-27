@@ -2,7 +2,8 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Luna Website</title>
+    <meta name="description" content="Luna Apollonio your favorite designer. This is my personal portfolio">
+    <title>Luna Apollonio</title>
     <link rel="shortcut icon" href="include/favicon.ico">
     <script src="js/script.js"></script>
     
@@ -11,7 +12,7 @@
     <div id="surpriseBackground"></div>
     <header>
         <div class="logo">
-            <img src="include/gifpomoc.gif" class="logoGif">
+            <img src="include/gifpomoc.gif" alt="logo"class="logoGif">
             <img src="include/lunaapollonio.png" alt="Luna Apollonio" class="logoLuna">
             <span class="slide">
                 <a href="#" onclick="openSlideMenu()">
@@ -19,17 +20,15 @@
                 </a>
         </div>
             <div id="content">
-                </span>
                 <div id="menu" class="nav">
                 <a href="#" class="close" onclick="closeSlideMenu()">
                     <img src="include/x.png" alt="close">
                 </a>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam quod nulla atque assumenda pariatur, autem facilis mollitia eligendi iste quam tempore tenetur commodi quo molestias, dolore aspernatur. Similique, placeat.</p>
+                <img src="include/aboutContent.png" alt="Content" id="aboutContent">
                 </div>
             </div>
     </header>
-    <img src="include/btn_prev.png" id="prev" class="flip-control">
+    <img src="include/btn_prev.png" alt="prev" id="prev" class="flip-control">
     <div id="book">
         <div id="flipbook">
             <div class="page">
@@ -53,13 +52,36 @@
             <div class="page">
                 <img src="include/pages/7.png" alt="image7">
             </div>
-           
+            <div class="page">
+                <img src="include/pages/8.png" alt="image8">
+            </div>
+            <div class="page">
+                <img src="include/pages/9.png" alt="image9">
+            </div>
+            <div class="page">
+                <img src="include/pages/10.png" alt="image10">
+            </div>
+            <div class="page">
+                <img src="include/pages/11.png" alt="image11">
+            </div>
+            <div class="page">
+                <img src="include/pages/12.png" alt="image12">
+            </div>
+            <div class="page">
+                <img src="include/pages/13.png" alt="image13">
+            </div>
+            <div class="page">
+                <img src="include/pages/14.png" alt="image14">
+            </div>
+            <div class="page">
+                <img src="include/pages/15.png" alt="image15">
+            </div>
         </div>
-        
     </div>
-    <img src="include/sencaplatnica.png" alt="" id="sencaPlatnica">
+    <img src="include/sencaplatnica.png" alt="shadow1" id="sencaPlatnica">
+    <img src="include/sencarevijaspodaj.png" alt="shadow2" id="senca">
 
-    <img src="include/btn_next.png" id="next" class="flip-control">
+    <img src="include/btn_next.png" alt="next" id="next" class="flip-control">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/turn.js"></script>
     
@@ -72,25 +94,23 @@
         });
         
         $("#prev").click(function(e){
-            if (+$("#flipbook").turn("page") == 10) {
-                document.getElementById("book").style.marginLeft = "-500";
-            }
             e.preventDefault();
             oTurn.turn("previous");
             if (+$("#flipbook").turn("page") == 1) {
                 document.getElementById("book").style.marginLeft = "-750";
+                document.getElementById("sencaPlatnica").style.visibility = "visible";
+                document.getElementById("senca").style.visibility = "hidden";
             }
         });
 
         $("#next").click(function(e){
             if (+$("#flipbook").turn("page") == 1) {
                 document.getElementById("book").style.marginLeft = "-500";
+                document.getElementById("sencaPlatnica").style.visibility = "hidden";
+                document.getElementById("senca").style.visibility = "visible";
             }
             e.preventDefault();
-            oTurn.turn("next");
-            if (+$("#flipbook").turn("page") == 10) {
-                document.getElementById("book").style.marginLeft = "-250";
-            }   
+            oTurn.turn("next"); 
         })
     </script>
 
@@ -108,13 +128,13 @@
         </section>
         <div class="links">
             <a href="https://www.instagram.com/lunapollonio" target="_blank">
-                <img src="include/instagram.png" alt="" class="linksIcons" id="ig">
+                <img src="include/instagram.png" alt="IG" class="linksIcons" id="ig">
             </a>
             <a href="mailto:luna.apollonio@gmail.com">
-                <img src="include/email.png" alt="" class="linksIcons" id="mail">
+                <img src="include/email.png" alt="email" class="linksIcons" id="mail">
             </a>
             <a href="#">
-                <img src="include/hearticon.png" alt="" class="linksIcons" id="heart">
+                <img src="include/hearticon.png" alt="heart" class="linksIcons" id="heart">
             </a>
         </div>
         <img src="include/rightsreserved.png" alt="All rights reserved" id="rights">
@@ -122,8 +142,8 @@
     </footer>
     
     <div id="mars">
-        <img src="include/marszadnji.png" alt="" id="marsIm">
-        <img src="include/marsText.png" alt="" id="marsTxt">
+        <img src="include/marszadnji.png" alt="Mars" id="marsIm">
+        <img src="include/marsText.png" alt="text" id="marsTxt">
         <a href="#" id="closeSurprise" onclick="closeSurprise()">
             <img src="include/x.png" alt="close">
         </a>
