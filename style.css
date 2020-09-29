@@ -24,6 +24,12 @@ body {
     width: 6%;
     height: auto;
     display: inline-block;
+    transition: 0.4s ease-in-out;
+}
+
+.logoLuna:hover {
+    opacity: 0.2;
+
 }
 
 #about {
@@ -32,12 +38,12 @@ body {
     position: absolute;
     top: 40%;
     right: 2%;
+    transition: 0.4s ease-in-out;
    
 }
 
 #about:hover {
     opacity: 0.2;
-    transition: 0.4s;
     
 }
 
@@ -61,14 +67,6 @@ body {
 	padding-top: 3%;
 	transition: 0.7s;
 }
-.nav p {
-	width: 23vw;
-	display: block;
-	padding: 0vw 1vw;
-	font-size: 1vw;
-	text-decoration: none; 
-	color: black;
-}
 
 .nav .close {
     position: absolute;
@@ -85,7 +83,6 @@ body {
 }
 .nav .close:hover {
 	opacity: 0.2;
-    transition: 0.4s;
 }
 
 
@@ -102,10 +99,10 @@ body {
 
 #book {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 50%;
     left:  50%;
-    margin-left: -750px;
+    margin-left: -780px;
     transition: margin-left 0.3s;
     margin-top: -353px;
     
@@ -123,11 +120,12 @@ body {
     height: auto;
     position: absolute;
     z-index: 2;
+    transition: 0.4s ease-in-out;
 }
 
 .flip-control:hover {
     opacity: 0.2;
-    transition: 0.4s;
+    
 }
 
 #prev {
@@ -157,7 +155,7 @@ body {
     width: 600px;
     top: 50%;
     left: 50%;
-    margin-left: -255px;
+    margin-left: -285px;
     margin-top: -388px;
 }
 #senca {
@@ -166,19 +164,45 @@ body {
     width: 1044px;
     top: 50%;
     left: 50%;
-    margin-left: -500px;
+    margin-left: -520px;
     margin-top: 333px;
-    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
+
 
 #surprise {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    text-decoration: none;
-    color: black;
-    font: 1vw;
-    transition: 0.7s
+    width: 2%;
+    height: auto;
+    bottom: 2%;
+    right: 2%;
+    z-index: 6;
+    transition: 0.7s;
+}
+
+#surprise:hover {
+    opacity: 0.2;
+}
+
+#surpriseClose {
+    position: absolute;
+    width: 1.5%;
+    height: auto;
+    bottom: 1.8%;
+    right: 2.2%;
+    z-index: 5;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+#contactArrow {
+    width: 3%;
+    height: auto;
+    position: absolute;
+    bottom: 7%;
+    right: 3.5%;
+    animation-iteration-count: infinite
 }
 
 #foot {
@@ -263,9 +287,8 @@ section .scroll div {
     width: 100%;
     height: 100%;
 	position: fixed;
-    z-index: 4;
-    transition: 0.7s;
-    bottom: -120%;  
+    
+    
 }
 
 #marsIm {
@@ -273,28 +296,19 @@ section .scroll div {
     width: 50%;
     height: auto;
     left: 10%;
+    transition: 0.7s;
+    bottom: -100%; 
+    z-index: 4;
 }
 
 #marsTxt {
     position: absolute;
     width: 20%;
     height: auto;
-    top: 36.5%;
     right: 18%;
-
-}
-
-#closeSurprise {
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    visibility: hidden;
-    z-index: 5;
-}
-
-#closeSurprise img {
-    width: 20%;
-
+    transition: 0.7s;
+    bottom: -100%; 
+    z-index: 4;
 }
 
 #surpriseBackground {

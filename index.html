@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="description" content="Luna Apollonio your favorite designer. This is my personal portfolio">
+    <meta name="description" content="Luna Apollonio your favorite designer. This is my personal portfolio. Turning ideas into form since 1993.">
     <title>Luna Apollonio</title>
     <link rel="shortcut icon" href="include/favicon.ico">
     <script src="js/script.js"></script>
@@ -13,7 +13,9 @@
     <header>
         <div class="logo">
             <img src="include/gifpomoc.gif" alt="logo"class="logoGif">
-            <img src="include/lunaapollonio.png" alt="Luna Apollonio" class="logoLuna">
+            <a href="#" onclick="surprise()">
+                <img src="include/lunaapollonio.png" alt="Luna Apollonio" class="logoLuna" >
+            </a>
             <span class="slide">
                 <a href="#" onclick="openSlideMenu()">
                 <img src="include/about.png" alt="About" id="about">
@@ -97,17 +99,19 @@
             e.preventDefault();
             oTurn.turn("previous");
             if (+$("#flipbook").turn("page") == 1) {
-                document.getElementById("book").style.marginLeft = "-750";
+                document.getElementById("book").style.marginLeft = "-780";
                 document.getElementById("sencaPlatnica").style.visibility = "visible";
-                document.getElementById("senca").style.visibility = "hidden";
+                document.getElementById("senca").style.opacity = "0";
+            
             }
         });
 
         $("#next").click(function(e){
             if (+$("#flipbook").turn("page") == 1) {
-                document.getElementById("book").style.marginLeft = "-500";
+                document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "hidden";
-                document.getElementById("senca").style.visibility = "visible";
+                document.getElementById("senca").style.transition = "0.5s"
+                document.getElementById("senca").style.opacity = "1";
             }
             e.preventDefault();
             oTurn.turn("next"); 
@@ -115,7 +119,12 @@
     </script>
 
     <a href="#"  onclick="surprise()">
-        <h1 id="surprise">CONTACT</h1>
+        <img src="include/contacticon.png" alt="Contact" id="surprise">
+    </a>
+    <img src="include/drekec.gif" alt="Arrow" id="contactArrow">
+
+    <a href="#" id="closeSurprise" onclick="closeSurprise()">
+        <img src="include/x.png" alt="close" id="surpriseClose">
     </a>
 <footer id="foot">
     <div id="footerContent">
@@ -141,12 +150,7 @@
     </div>   
     </footer>
     
-    <div id="mars">
-        <img src="include/marszadnji.png" alt="Mars" id="marsIm">
-        <img src="include/marsText.png" alt="text" id="marsTxt">
-        <a href="#" id="closeSurprise" onclick="closeSurprise()">
-            <img src="include/x.png" alt="close">
-        </a>
-    </div>
+    <img src="include/marszadnji.png" alt="Mars" id="marsIm">
+    <img src="include/marsText.png" alt="text" id="marsTxt">
 </body>
 </html>
