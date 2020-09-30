@@ -6,9 +6,16 @@
     <title>Luna Apollonio</title>
     <link rel="shortcut icon" href="include/favicon.ico">
     <script src="js/script.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/turn.js"></script>
     
 </head>
 <body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
     <div id="surpriseBackground"></div>
     <header>
         <div class="logo">
@@ -84,8 +91,7 @@
     <img src="include/sencarevijaspodaj.png" alt="shadow2" id="senca">
 
     <img src="include/btn_next.png" alt="next" id="next" class="flip-control">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/turn.js"></script>
+    
     
     <script>
         var oTurn = $("#flipbook").turn({
@@ -99,9 +105,15 @@
             e.preventDefault();
             oTurn.turn("previous");
             if (+$("#flipbook").turn("page") == 1) {
-                document.getElementById("book").style.marginLeft = "-780";
+                document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "visible";
+
+                document.getElementById("senca").style.transition = "0s"
+                document.getElementById("senca").style.visibility = "hidden"
+                document.getElementById("senca").style.width = "0px";
+                document.getElementById("senca").style.marginLeft = "0px";
                 document.getElementById("senca").style.opacity = "0";
+
             
             }
         });
@@ -110,7 +122,11 @@
             if (+$("#flipbook").turn("page") == 1) {
                 document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "hidden";
+
+                document.getElementById("senca").style.visibility = "visible"
                 document.getElementById("senca").style.transition = "0.5s"
+                document.getElementById("senca").style.width = "1044px";
+                document.getElementById("senca").style.marginLeft = "-520px";
                 document.getElementById("senca").style.opacity = "1";
             }
             e.preventDefault();
@@ -131,26 +147,53 @@
         <section>
             <div class="scroll">
                 <div>
-                    Check <span>Luna - </span>Check <span>Evan - </span>check <span>us out - </span></span>Online <span>SOMETHING - </span>we got this</span>Soemhwo <span>Tyes yes luna happy</span>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                </div>
+                <div>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>
+                    <p class="text1"> Get in touch</p>
+                    <p class="text2"> Get in touch</p>  
                 </div>
             </div>
         </section>
-        <div class="links">
-            <a href="https://www.instagram.com/lunapollonio" target="_blank">
-                <img src="include/instagram.png" alt="IG" class="linksIcons" id="ig">
-            </a>
-            <a href="mailto:luna.apollonio@gmail.com">
-                <img src="include/email.png" alt="email" class="linksIcons" id="mail">
-            </a>
-            <a href="#">
-                <img src="include/hearticon.png" alt="heart" class="linksIcons" id="heart">
-            </a>
-        </div>
+        
+            <a href="https://www.instagram.com/lunapollonio" target="_blank"><img src="include/instagram.png" alt="IG" class="linksIcons" id="ig"></a>
+            <a href="mailto:luna.apollonio@gmail.com"><img src="include/email.png" alt="email" class="linksIcons" id="mail"></a>
+            <a href="#"><img src="include/hearticon.png" alt="heart" class="linksIcons" id="heart"></a>
+    
         <img src="include/rightsreserved.png" alt="All rights reserved" id="rights">
     </div>   
     </footer>
     
     <img src="include/marszadnji.png" alt="Mars" id="marsIm">
     <img src="include/marsText.png" alt="text" id="marsTxt">
+    
+    
+
+    <script>
+        $(window).on("load",function(){
+            $("#loader-wrapper").fadeOut(500);
+        })
+    </script>
 </body>
 </html>

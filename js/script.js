@@ -11,17 +11,17 @@ function closeSlideMenu() {
 
 function surprise() {
     document.getElementById('foot').style.bottom = '0%';
-    document.getElementById('footerContent').style.marginBottom = '12%';
+    document.getElementById('footerContent').style.marginBottom = '11%';
 
-    document.getElementById('surprise').style.bottom = '15%';
+    document.getElementById('surprise').style.bottom = '14%';
     document.getElementById('surprise').style.opacity = '0';
     document.getElementById('surprise').style.zIndex = '5';
 
-    document.getElementById('surpriseClose').style.bottom = '15%';
+    document.getElementById('surpriseClose').style.bottom = '14%';
     document.getElementById('surpriseClose').style.opacity = '1';
     document.getElementById('surpriseClose').style.zIndex = '6';
 
-    document.getElementById('marsIm').style.bottom = '10%';
+    document.getElementById('marsIm').style.bottom = '11%';
     document.getElementById('marsTxt').style.bottom = '65%';
 
     document.getElementById('surpriseBackground').style.zIndex = '4';
@@ -34,7 +34,7 @@ function surprise() {
 
 function closeSurprise() {
     
-    document.getElementById('foot').style.bottom = '-12%';
+    document.getElementById('foot').style.bottom = '-11%';
     document.getElementById('footerContent').style.marginBottom = '0%';
 
     document.getElementById('surprise').style.bottom = '2%';
