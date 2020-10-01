@@ -21,7 +21,7 @@ function surprise() {
     document.getElementById('surpriseClose').style.opacity = '1';
     document.getElementById('surpriseClose').style.zIndex = '6';
 
-    document.getElementById('marsIm').style.bottom = '11%';
+    document.getElementById('marsIm').style.bottom = '10.9%';
     document.getElementById('marsTxt').style.bottom = '65%';
 
     document.getElementById('surpriseBackground').style.zIndex = '4';

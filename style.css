@@ -32,12 +32,14 @@ body {
     position: relative;
     display: inline-block;
     padding-top: 0.5%;
+    z-index: 2;    
 
 }
 .logoGif {
     width: 6%;
     height: auto;
     display: inline-block;
+    min-width: 100px;
 }
 
 .logoLuna {
@@ -45,6 +47,7 @@ body {
     height: auto;
     display: inline-block;
     transition: 0.4s ease-in-out;
+    min-width: 100px;
 }
 
 .logoLuna:hover {
@@ -59,6 +62,7 @@ body {
     top: 40%;
     right: 2%;
     transition: 0.4s ease-in-out;
+    min-width: 100px;
    
 }
 
@@ -118,6 +122,8 @@ body {
 }
 
 #book {
+    width: 1040px;
+    height: 700px;
     position: fixed;
     z-index: 1;
     top: 50%;
@@ -148,9 +154,11 @@ body {
 
 #prev {
     left: 10%;
+    min-width: 20px;
 }
 #next {
     right: 10%;
+    min-width: 20px;
 }
 
 #mybook .turn-page{
@@ -188,7 +196,6 @@ body {
     opacity: 0;
 }
 
-
 #surprise {
     position: absolute;
     width: 2%;
@@ -197,6 +204,7 @@ body {
     right: 2%;
     z-index: 6;
     transition: 0.7s;
+    min-width: 20px;
 }
 
 #surprise:hover {
@@ -212,6 +220,11 @@ body {
     z-index: 5;
     transition: 0.7s;
     opacity: 0;
+    min-width: 20px;
+}
+
+#surpriseClose:hover {
+    opacity: 0.2;
 }
 
 #contactArrow {
@@ -251,23 +264,23 @@ section .scroll {
     display: flex;
 }
 section .scroll div {
-    margin-top: -0.5%;
+    margin-top: -1%;
     display: absolute;
     white-space: nowrap;
     font-weight: 900;
     text-transform: uppercase;
-    animation: animate 100s linear infinite;
-    animation-delay: -100s;
+    animation: animate 160s linear infinite;
+    animation-delay: -160s;
 }
 
 section .scroll div:nth-child(2) {
-    animation: animate2 100s linear infinite;
-    animation-delay: -50s;
+    animation: animate2 160s linear infinite;
+    animation-delay: -80s;
 }
 
 section .scroll div p {
     display: inline-block;
-    font-size: 150%;
+    font-size:calc(1px + 1.5vw);
 }
 
 .text1 {
@@ -307,11 +320,11 @@ section .scroll div p {
 }
 
 .linksIcons {
-    height: 20%;
+    height: 23%;
     width: auto;
     left: 48%;
     margin-bottom: -2%;
-    margin-right: 0.1%;
+    margin-right: 0.05%;
     position: relative;
     text-decoration: none;
     border-bottom: none;
@@ -323,7 +336,7 @@ section .scroll div p {
 }
 
 #ig {
-    margin-right: 0.2%;
+    margin-right: 0.15%;
 }
 
 #ig:hover {
@@ -344,15 +357,6 @@ section .scroll div p {
     height: auto;
 }
 
-#mars {
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-	position: fixed;
-    
-    
-}
 
 #marsIm {
     position: absolute;
@@ -362,6 +366,8 @@ section .scroll div p {
     transition: 0.7s;
     bottom: -100%; 
     z-index: 4;
+    min-width: 500px;
+
 }
 
 #marsTxt {
@@ -372,6 +378,7 @@ section .scroll div p {
     transition: 0.7s;
     bottom: -100%; 
     z-index: 4;
+    min-width: 100px; 
 }
 
 #surpriseBackground {
@@ -382,7 +389,6 @@ section .scroll div p {
     background-color: #e2e1ce;
     opacity: 0.8;
     visibility: hidden;
-    
 
 }
 
