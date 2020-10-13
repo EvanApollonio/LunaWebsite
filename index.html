@@ -2,18 +2,23 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="description" content="Luna Apollonio  |  visual designer.">
+    
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
+
     <title>Luna Apollonio</title>
+    <meta name="description" content="Luna Apollonio  |  visual designer.">
+    <meta name="keywords" content="Luna, Apollonio, Luna Apollonio, Luna designer, luna website, luna portfolio">
     <link rel="shortcut icon" href="include/favicon.ico">
+
     <script src="js/script.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/turn.js"></script>
     
 </head>
 <body>
+
 
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -41,6 +46,7 @@
             </div>
     </header>
     <img src="include/btn_prev.png" alt="prev" id="prev" class="flip-control">
+
     
     <div id="book">
         <div id="flipbook">
@@ -98,14 +104,19 @@
     
     
     <script>
+        var pageWidth = screen.width * 0.45;
+        var pageHeight = screen.height * 0.6;
+
         var oTurn = $("#flipbook").turn({
         autoCenter: true
         });
+
         
+
         window.addEventListener('resize', function (e) {
-            document.getElementById('flipbook').style.width = '';
-            document.getElementById('flipbook').style.height = '';
-            $(document.getElementById('flipbook')).turn('size', document.getElementById('flipbook').clientWidth, document.getElementById('flipbook').clientHeight);
+            
+            document.getElementById("flipbook").style.width = pageWidth;
+            document.getElementById("flipbook").style.height = pageHeight;
         });
         
         $("#prev").click(function(e){
@@ -115,8 +126,8 @@
                 document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "visible";
 
-                document.getElementById("senca").style.transition = "0s"
-                document.getElementById("senca").style.visibility = "hidden"
+                document.getElementById("senca").style.transition = "0s";
+                document.getElementById("senca").style.visibility = "hidden";
                 document.getElementById("senca").style.width = "0px";
                 document.getElementById("senca").style.marginLeft = "0px";
                 document.getElementById("senca").style.opacity = "0";
@@ -128,8 +139,8 @@
                 document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "hidden";
 
-                document.getElementById("senca").style.visibility = "visible"
-                document.getElementById("senca").style.transition = "0.5s"
+                document.getElementById("senca").style.visibility = "visible";
+                document.getElementById("senca").style.transition = "0.5s";
                 document.getElementById("senca").style.width = "1044px";
                 document.getElementById("senca").style.marginLeft = "-520px";
                 document.getElementById("senca").style.opacity = "1";
@@ -137,6 +148,27 @@
             e.preventDefault();
             oTurn.turn("next"); 
         })
+
+        $(window).width(function(){
+            var win = $(this); //this = window
+            if (win.width() >= 820) {
+                $("#flipbook").turn('display','double');
+            }
+            else {
+                $("#flipbook").turn('display','single');
+            }
+            });
+
+        $(window).resize(function(){
+            win = $(this); //this = window
+            if (win.width() >= 820) {
+                $("#flipbook").turn('display','double');
+            }
+            else {
+                $("#flipbook").turn('display','single');                    
+            }
+        });
+
     </script>
 
     <a href="#"  onclick="surprise()">
@@ -152,38 +184,38 @@
         <section>
             <div class="scroll">
                 <div>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
                 </div>
                 <div>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>
-                    <p class="text1"> Get in touch</p>
-                    <p class="text2"> Get in touch</p>  
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text1"> Get in touch</p></a>
+                    <a href="mailto:hello@lunaapollonio.com"><p class="text2"> Get in touch</p></a>
                 </div>
             </div>
         </section>
         
             <a href="https://www.instagram.com/lunapollonio" target="_blank"><img src="include/instagram.png" alt="IG" class="linksIcons" id="ig"></a>
-            <a href="mailto:luna.apollonio@gmail.com"><img src="include/email.png" alt="email" class="linksIcons" id="mail"></a>
+            <a href="mailto:hello@lunaapollonio.com"><img src="include/email.png" alt="email" class="linksIcons" id="mail"></a>
             <a href="#"><img src="include/hearticon.png" alt="heart" class="linksIcons" id="heart"></a>
     
         <img src="include/rightsreserved.png" alt="All rights reserved" id="rights">

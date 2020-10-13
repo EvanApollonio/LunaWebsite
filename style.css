@@ -1,16 +1,24 @@
+:root {
+    --pageWidth: screen.width;
+    --pageHeight: screen.width;
+}
+
+
 @font-face {
     font-family: PBlack;
     src: url(include/Fonts/Pangram-Black.otf);
-}
+    }
+
     @font-face {
     font-family: PLight;
     src: url(include/Fonts/Pangram-ExtraLight.otf);
+    }
 
-}
     @font-face {
     font-family: PRegular;
     src: url(include/Fonts/Pangram-Regular.otf);
-  }
+    }
+
 
 #test1 {
     font-family: PLight;
@@ -33,8 +41,8 @@ body {
     display: inline-block;
     padding-top: 0.5%;
     z-index: 2;    
-
 }
+
 .logoGif {
     width: 6%;
     height: auto;
@@ -121,6 +129,7 @@ body {
 	width: 100%;
 }
 
+
 #book {
     width: 1040px;
     height: 700px;
@@ -133,8 +142,8 @@ body {
 }
 
 #flipbook{
-    width: 1040px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     transition: 0.3s;
 }
 
@@ -161,14 +170,8 @@ body {
     min-width: 20px;
 }
 
-#mybook .turn-page{
-	background-color:#ccc;
-}
-
 .page {
     width: auto;
-    text-align: center;
-    background-color: white;
 }
 .page img {
     max-width: 100%;
@@ -233,7 +236,8 @@ body {
     position: absolute;
     bottom: 7%;
     right: 3.5%;
-    animation-iteration-count: infinite
+    animation-iteration-count: infinite;
+    z-index: 4;
 }
 
 #foot {
@@ -278,17 +282,30 @@ section .scroll div:nth-child(2) {
     animation-delay: -80s;
 }
 
-section .scroll div p {
+section .scroll div a {
     display: inline-block;
+    text-decoration: none;
+    color: black;
     font-size:calc(1px + 1.5vw);
+    
 }
 
 .text1 {
     font-family: PBlack;
+    transition: 0.4s;  
 }
 
 .text2 {
     font-family: PLight;
+    transition: 0.4s;
+}
+
+.text1:hover {
+    opacity: 0.2;
+}
+
+.text2:hover {
+    opacity: 0.2;
 }
 
 
@@ -322,7 +339,7 @@ section .scroll div p {
 .linksIcons {
     height: 23%;
     width: auto;
-    left: 48%;
+    left: 45%;
     margin-bottom: -2%;
     margin-right: 0.05%;
     position: relative;
