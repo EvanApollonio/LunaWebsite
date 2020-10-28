@@ -96,6 +96,31 @@
             <div class="page">
                 <img src="include/pages/15.png" alt="image15">
             </div>
+            <div class="page">
+                <img src="include/pages/16.png" alt="image16">
+            </div>
+            <div class="page">
+                <img src="include/pages/17.png" alt="image17">
+            </div>
+            <div class="page">
+                <img src="include/pages/18.png" alt="image18">
+            </div>
+            <div class="page">
+                <img src="include/pages/19.png" alt="image19">
+            </div>
+            <div class="page">
+                <img src="include/pages/20.png" alt="image20">
+            </div>
+            <div class="page">
+                <img src="include/pages/21.png" alt="image21">
+            </div>
+            <div class="page">
+                <img src="include/pages/22.png" alt="image22">
+            </div>
+            <div class="page">
+                <img src="include/pages/23.png" alt="image23">
+            </div>
+            
         </div>
     </div>
     <img src="include/sencaplatnica.png" alt="shadow1" id="sencaPlatnica">
@@ -109,15 +134,13 @@
         var pageHeight = screen.height * 0.6;
 
         var oTurn = $("#flipbook").turn({
-        autoCenter: true
+            autoCenter: true
         });
-
-        
 
         window.addEventListener('resize', function (e) {
             
-            document.getElementById("flipbook").style.width = pageWidth;
-            document.getElementById("flipbook").style.height = pageHeight;
+            document.getElementById("book").style.width = pageWidth;
+            document.getElementById("book").style.height = pageHeight;
         });
         
         $("#prev").click(function(e){
@@ -164,6 +187,7 @@
             win = $(this); //this = window
             if (win.width() >= 820) {
                 $("#flipbook").turn('display','double');
+                
             }
             else {
                 $("#flipbook").turn('display','single');                    

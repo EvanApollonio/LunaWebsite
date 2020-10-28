@@ -1,10 +1,9 @@
 function openSlideMenu() {
     document.getElementById('menu').style.right = '0%';
     document.getElementById('content').style.marginRight = '25%';
-    
-    
 
 }
+
 function closeSlideMenu() {
     document.getElementById('menu').style.right = '-25%';
     document.getElementById('content').style.marginRight = '0';
