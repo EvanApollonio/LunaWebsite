@@ -147,7 +147,6 @@
             e.preventDefault();
             oTurn.turn("previous");
             if (+$("#flipbook").turn("page") == 1) {
-                document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "visible";
 
                 document.getElementById("senca").style.transition = "0s";
@@ -160,13 +159,12 @@
 
         $("#next").click(function(e){
             if (+$("#flipbook").turn("page") == 1) {
-                document.getElementById("book").style.marginLeft = "-520";
                 document.getElementById("sencaPlatnica").style.visibility = "hidden";
 
                 document.getElementById("senca").style.visibility = "visible";
                 document.getElementById("senca").style.transition = "0.5s";
-                document.getElementById("senca").style.width = "1044px";
-                document.getElementById("senca").style.marginLeft = "-520px";
+                document.getElementById("senca").style.width = "55vw";
+                document.getElementById("senca").style.marginLeft = "-27.6vw";
                 document.getElementById("senca").style.opacity = "1";
             }
             e.preventDefault();

@@ -131,18 +131,17 @@ body {
 
 
 #book {
-    
     position: fixed;
     z-index: 1;
     top: 50%;
     left: 50%;
-    margin-left: -520px;
-    margin-top: -353px;
+    margin-left: -27.2vw;
+    margin-top: -36vh;
 }
 
 #flipbook{
-    width: 1040px;
-    height: 700px;
+    width: 54.4vw;
+    height: 72vh;
     transition: 0.3s;
 }
 
@@ -170,30 +169,32 @@ body {
 }
 
 .page {
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 .page img {
-    max-width: 100%;
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 #sencaPlatnica {
     position: absolute;
-    height: 770px;
-    width: 600px;
+    height: 79.5vh;
+    width: 33.6vw;
     top: 50%;
     left: 50%;
-    margin-left: -285px;
-    margin-top: -388px;
+    margin-left: -16.95vw;
+    margin-top: -39.9vh;
 }
+
 #senca {
     position: absolute;
     height: auto;
     width: 0;
     top: 50%;
     left: 50%;
-    margin-left: 0px;
-    margin-top: 333px;
+
+    margin-top: 34.5vh;
     transition: 0.5s;
     opacity: 0;
 }
