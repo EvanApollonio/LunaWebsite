@@ -1,9 +1,16 @@
 function openSlideMenu() {
-    document.getElementById('menu').style.right = '0%';
-    document.getElementById('content').style.marginRight = '25%';
+    if($(window).width() >= 1100) {
+        document.getElementById('menu').style.right = '0%';
+        document.getElementById('content').style.marginRight = '25%';
+    } else {
+        document.getElementById('menu').style.right = '0%';
+        document.getElementById('menu').style.width = '100vw';
+        document.getElementById('content').style.marginRight = '25%';
+    }
 }
 
 function closeSlideMenu() {
+    document.getElementById('menu').style.width = '20vw';
     document.getElementById('menu').style.right = '-25%';
     document.getElementById('content').style.marginRight = '0';
 
@@ -21,8 +28,13 @@ function surprise() {
     document.getElementById('surpriseClose').style.opacity = '1';
     document.getElementById('surpriseClose').style.zIndex = '6';
 
-    document.getElementById('marsIm').style.bottom = '10.9%';
-    document.getElementById('marsTxt').style.bottom = '65%';
+    if($(window).width() >= 1100) {
+        document.getElementById('marsIm').style.bottom = '10.9%';
+        document.getElementById('marsTxt').style.bottom = '65%';
+    } else {
+        document.getElementById('marsIm').style.bottom = '10.9vh';
+        document.getElementById('marsTxt').style.bottom = '32vh';
+    }
 
     document.getElementById('surpriseBackground').style.zIndex = '4';
     document.getElementById('surpriseBackground').style.visibility = 'visible';
@@ -33,6 +45,7 @@ function surprise() {
 }
 
 function closeSurprise() {
+    
     
     document.getElementById('foot').style.bottom = '-11%';
     document.getElementById('footerContent').style.marginBottom = '0%';

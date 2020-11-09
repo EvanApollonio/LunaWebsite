@@ -25,8 +25,14 @@
     font-size: 200%;
 }
 
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -36,7 +42,7 @@ body {
 
 
 .logo {
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: inline-block;
     padding-top: 0.5%;
@@ -44,14 +50,14 @@ body {
 }
 
 .logoGif {
-    width: 6%;
+    width: 6vw;
     height: auto;
     display: inline-block;
     min-width: 100px;
 }
 
 .logoLuna {
-    width: 6%;
+    width: 6vw;
     height: auto;
     display: inline-block;
     transition: 0.4s ease-in-out;
@@ -64,7 +70,7 @@ body {
 }
 
 #about {
-    width: 5.5%;
+    width: 5.5vw;
     height: auto;
     position: absolute;
     top: 40%;
@@ -136,27 +142,29 @@ body {
     top: 50%;
     left: 50%;
     margin-left: -27.2vw;
-    margin-top: -36vh;
+    margin-top: -18.2vw;
 }
 
 #flipbook{
     width: 54.4vw;
-    height: 72vh;
+    height: 36.4vw;
     transition: 0.3s;
 }
 
 .flip-control {
-    top: 45%;
-    width: 2%;
+    top: 50%;
+    width: 2vw;
+    margin-top: -1vw;
     height: auto;
     position: absolute;
     z-index: 2;
     transition: 0.4s ease-in-out;
 }
 
-.flip-control:hover {
-    opacity: 0.2;
-    
+@media (hover:hover) {
+    .flip-control:hover {
+        opacity: 0.2;
+    }
 }
 
 #prev {
@@ -179,12 +187,12 @@ body {
 
 #sencaPlatnica {
     position: absolute;
-    height: 79.5vh;
-    width: 33.6vw;
+    height: 40vw;
+    width: 32.7vw;
     top: 50%;
     left: 50%;
-    margin-left: -16.95vw;
-    margin-top: -39.9vh;
+    margin-left: -16.1vw;
+    margin-top: -20vw;
 }
 
 #senca {
@@ -194,7 +202,7 @@ body {
     top: 50%;
     left: 50%;
 
-    margin-top: 34.5vh;
+    margin-top: 17.4vw;
     transition: 0.5s;
     opacity: 0;
 }
@@ -438,3 +446,117 @@ section .scroll div a {
         transform: rotate(360deg);
     }
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .logoGif {
+        width: 20vw;
+        height: auto;
+        
+    }
+    
+    .logoLuna {
+        width: 20vw;
+        height: auto;
+    }
+
+    #about {
+        width: 19vw;
+        height: auto;
+        position: absolute;
+        
+    }
+
+    #book {
+        margin-left: -42vw;
+        margin-top: -28.1vw;
+    }
+
+    #flipbook{
+        width: 84vw;
+        height: 56.2vw;
+        transition: 0.3s;
+    }
+
+    .flip-control {
+        width: 3vw;
+        height: auto;
+        margin-top: -10vw;
+    }
+
+    #prev {
+        left: 3vw;
+    }
+    #next {
+        right: 3vw;
+    }
+
+    #surprise {
+        width: 6vw;
+        height: auto;
+        bottom: 10vh;
+        right: 3vw;
+        
+    }
+    
+    #contactArrow {
+        width: 8vw;
+        height: auto;
+        bottom: 12vh;
+        right: 8vw;
+        
+    }
+
+    #aboutContent {
+        position: absolute;
+        width: 80vw;
+        height: auto;
+        top: 20%;
+        left: 10%;
+    }
+    
+        
+    #marsIm {
+        width: 80vw;
+        height: auto;
+        left: -5vw;
+        bottom: -100%; 
+    }
+
+    #marsTxt {
+        position: absolute;
+        width: 40vw;
+        height: auto;
+        right: 5vw;
+        transition: 0.7s;
+        bottom: -100%; 
+        z-index: 4;
+        min-width: 100px; 
+    }
+        
+    #foot {
+        height: 11%;
+        width: 100%;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        bottom: -12%;
+        background-color:#285D28;
+        overflow: hidden;
+        transition: 0.7s;  
+    }
+
+    section .scroll div a {
+        font-size:calc(1px + 3vw);
+        
+    }
+
+    #rights {
+        position: absolute;
+        bottom: 10%;
+        left: 1%;
+        width: 20vw;
+        height: auto;
+    }
+        
+  }
