@@ -1,5 +1,5 @@
 function openSlideMenu() {
-    if($(window).width() >= 1100) {
+    if(window.innerHeight < window.innerWidth) {
         document.getElementById('menu').style.right = '0%';
         document.getElementById('content').style.marginRight = '25%';
     } else {
@@ -17,23 +17,34 @@ function closeSlideMenu() {
 }
 
 function surprise() {
+    document.getElementById('marsIm').style.visibility = 'visible';
     document.getElementById('foot').style.bottom = '0%';
     document.getElementById('footerContent').style.marginBottom = '11%';
 
-    document.getElementById('surprise').style.bottom = '14%';
+    if(window.innerHeight < window.innerWidth) {
+        document.getElementById('surprise').style.bottom = '14vh';
+    } else {
+        document.getElementById('surprise').style.bottom = '22vh';
+    }
+    
     document.getElementById('surprise').style.opacity = '0';
     document.getElementById('surprise').style.zIndex = '5';
 
-    document.getElementById('surpriseClose').style.bottom = '14%';
+    if(window.innerHeight < window.innerWidth) {
+        document.getElementById('surpriseClose').style.bottom = '14%';
+    } else {
+        document.getElementById('surpriseClose').style.bottom = '22vh';
+    }
+    
     document.getElementById('surpriseClose').style.opacity = '1';
     document.getElementById('surpriseClose').style.zIndex = '6';
 
-    if($(window).width() >= 1100) {
+    if(window.innerHeight < window.innerWidth) {
         document.getElementById('marsIm').style.bottom = '10.9%';
         document.getElementById('marsTxt').style.bottom = '65%';
     } else {
-        document.getElementById('marsIm').style.bottom = '10.9vh';
-        document.getElementById('marsTxt').style.bottom = '32vh';
+        document.getElementById('marsIm').style.bottom = '16.5vh';
+        document.getElementById('marsTxt').style.bottom = '70vh';
     }
 
     document.getElementById('surpriseBackground').style.zIndex = '4';
@@ -50,7 +61,12 @@ function closeSurprise() {
     document.getElementById('foot').style.bottom = '-11%';
     document.getElementById('footerContent').style.marginBottom = '0%';
 
-    document.getElementById('surprise').style.bottom = '2%';
+    if(window.innerHeight < window.innerWidth) {
+        document.getElementById('surprise').style.bottom = '2vh';
+    } else {
+        document.getElementById('surprise').style.bottom = '10vh';
+    }
+    
     document.getElementById('surprise').style.opacity = '1';
     document.getElementById('surprise').style.zIndex = '6'
 

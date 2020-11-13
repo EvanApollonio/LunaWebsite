@@ -188,10 +188,10 @@ body {
 #sencaPlatnica {
     position: absolute;
     height: 40vw;
-    width: 32.7vw;
+    width: 32.3vw;
     top: 50%;
     left: 50%;
-    margin-left: -16.1vw;
+    margin-left: -15.7vw;
     margin-top: -20vw;
 }
 
@@ -335,13 +335,11 @@ section .scroll div a {
 }
 
 .links {
-    width: 20%;
-    height: 40%;
-    position: absolute;
+    position: relative;
     display: inline-block;
-    
     bottom: 0;
     border-bottom: none;
+    left: 45%;
 }
 
 .linksIcons {
@@ -382,6 +380,13 @@ section .scroll div a {
     height: auto;
 }
 
+#marsStuff {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
 
 #marsIm {
     position: absolute;
@@ -392,7 +397,7 @@ section .scroll div a {
     bottom: -100%; 
     z-index: 4;
     min-width: 500px;
-
+    visibility: hidden;
 }
 
 #marsTxt {
@@ -447,7 +452,7 @@ section .scroll div a {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (orientation: portrait) {
 
     .logoGif {
         width: 20vw;
@@ -481,7 +486,7 @@ section .scroll div a {
     .flip-control {
         width: 3vw;
         height: auto;
-        margin-top: -10vw;
+        margin-top: -1.5vw;
     }
 
     #prev {
@@ -500,9 +505,9 @@ section .scroll div a {
     }
     
     #contactArrow {
-        width: 8vw;
+        width: 12vw;
         height: auto;
-        bottom: 12vh;
+        bottom: 13vh;
         right: 8vw;
         
     }
@@ -514,13 +519,14 @@ section .scroll div a {
         top: 20%;
         left: 10%;
     }
-    
-        
+     
     #marsIm {
-        width: 80vw;
+        width: 140vw;
         height: auto;
-        left: -5vw;
+        left: -25vw;
         bottom: -100%; 
+        overflow: hidden;
+        visibility: hidden;
     }
 
     #marsTxt {
@@ -547,16 +553,41 @@ section .scroll div a {
     }
 
     section .scroll div a {
-        font-size:calc(1px + 3vw);
+        font-size:calc(20px + 2vw);
         
     }
 
     #rights {
-        position: absolute;
-        bottom: 10%;
+        bottom: 8%;
         left: 1%;
         width: 20vw;
         height: auto;
+    }
+
+    .links {
+        display: inline-block;
+        bottom: 0;
+        border-bottom: none;
+    }
+    
+    .linksIcons {
+        height: 23%;
+        width: auto;
+        left: 45%;
+        bottom: -12%;
+        margin-right: 0.05%;
+        position: relative;
+        text-decoration: none;
+        border-bottom: none;
+    }
+    section .scroll div {
+        margin-top: -3%;
+
+    }
+    #surpriseClose {
+        width: 5vw;
+        top: 10vh;
+        right: 5vw;
     }
         
   }

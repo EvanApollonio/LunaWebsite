@@ -13,7 +13,7 @@
     <meta name="keywords" content="Luna, Apollonio, Luna Apollonio, Luna designer, luna website, luna portfolio, luna apollonio portfolio">
     <link rel="shortcut icon" href="include/favicon.ico">
     
-    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+    <meta name="viewport" content=" initial-scale=0.41, maximum-scale=1, miinimum-scale=" />
 
     <script src="js/script.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
@@ -58,7 +58,7 @@
                 <img src="include/pages/2.png" alt="Golden Statue">
             </div>
             <div class="page">
-                <img src="include/pages/3.png" alt="Statue hand holding the magazine">
+                <img src="include/pages/3.png" alt="Statue hand holding the megazine">
             </div>
             <div class="page">
                 <img src="include/pages/4.png" alt="Text coversation Cinzia">
@@ -123,15 +123,16 @@
     <img src="include/btn_next.png" alt="Arrow button for turning on the next page" id="next" class="flip-control">
     
     
-    <script>
+    <script type="text/javascript">
+
         window.addEventListener('resize', function (e) {
             document.location.reload(true)
+
         });
 
         var oTurn = $("#flipbook").turn({
             autoCenter: true
         });
-        
         
         $("#prev").click(function(e){
             e.preventDefault();
@@ -152,8 +153,8 @@
 
                 document.getElementById("senca").style.visibility = "visible";
                 document.getElementById("senca").style.transition = "0.5s";
-                document.getElementById("senca").style.width = "55vw";
-                document.getElementById("senca").style.marginLeft = "-27.6vw";
+                document.getElementById("senca").style.width = "54.3vw";
+                document.getElementById("senca").style.marginLeft = "-27vw";
                 document.getElementById("senca").style.opacity = "1";
             }
             e.preventDefault();
@@ -205,7 +206,7 @@
                 </div>
             </div>
         </section>
-        
+
             <a href="https://www.instagram.com/lunapollonio" target="_blank"><img src="include/instagram.png" alt="IG link logo" class="linksIcons" id="ig"></a>
             <a href="mailto:hello@lunaapollonio.com"><img src="include/email.png" alt="email link logo" class="linksIcons" id="mail"></a>
             <a href="#"><img src="include/hearticon.png" alt="heart" class="linksIcons" id="heart"></a>
@@ -213,9 +214,11 @@
         <img src="include/rightsreserved.png" alt="All rights reserved image" id="rights">
     </div>   
     </footer>
+    <div id="marsStuff">
+        <img src="include/marszadnji.png" alt="Green god Mars" id="marsIm">
+        <img src="include/marsText.png" alt="Text that comes with Mars" id="marsTxt">
+    </div>
     
-    <img src="include/marszadnji.png" alt="Green god Mars" id="marsIm">
-    <img src="include/marsText.png" alt="Text that comes with Mars" id="marsTxt">
     
     
 
